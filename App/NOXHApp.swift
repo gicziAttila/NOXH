@@ -11,7 +11,7 @@ import SwiftUI
 struct NOXHApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DashboardView()
         }
     }
 }

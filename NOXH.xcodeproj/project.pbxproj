@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		36D9C18B2FFC3A5600886D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D9C1882FFC3A5600886D05 /* Assets.xcassets */; };
 		36D9C18D2FFC3A5600886D05 /* NOXHApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C18A2FFC3A5600886D05 /* NOXHApp.swift */; };
+		36D9C1A12FFC3FA400886D05 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C1A02FFC3FA400886D05 /* DashboardView.swift */; };
+		36D9C1A42FFC413500886D05 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C1A32FFC413500886D05 /* FoodItem.swift */; };
+		36D9C1A62FFC451E00886D05 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C1A52FFC451E00886D05 /* Profile.swift */; };
+		36D9C1A82FFC46B000886D05 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C1A72FFC46B000886D05 /* LogEntry.swift */; };
+		36D9C1AB2FFC48DE00886D05 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C1AA2FFC48DE00886D05 /* Recipe.swift */; };
+		36D9C1AD2FFC493F00886D05 /* RecipeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C1AC2FFC493F00886D05 /* RecipeIngredient.swift */; };
+		36D9C1B02FFC49CB00886D05 /* DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C1AF2FFC49CB00886D05 /* DailyLog.swift */; };
+		36D9C1B22FFC4A0E00886D05 /* WeightLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C1B12FFC4A0E00886D05 /* WeightLog.swift */; };
+		36D9C1B52FFC4B8E00886D05 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 36D9C1B42FFC4B8E00886D05 /* Supabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,14 @@
 		3678DC162FFC34C800F23378 /* NOXHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOXHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D9C1882FFC3A5600886D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36D9C18A2FFC3A5600886D05 /* NOXHApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOXHApp.swift; sourceTree = "<group>"; };
+		36D9C1A02FFC3FA400886D05 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		36D9C1A32FFC413500886D05 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		36D9C1A52FFC451E00886D05 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		36D9C1A72FFC46B000886D05 /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
+		36D9C1AA2FFC48DE00886D05 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		36D9C1AC2FFC493F00886D05 /* RecipeIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredient.swift; sourceTree = "<group>"; };
+		36D9C1AF2FFC49CB00886D05 /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLog.swift; sourceTree = "<group>"; };
+		36D9C1B12FFC4A0E00886D05 /* WeightLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D9C1B52FFC4B8E00886D05 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +152,13 @@
 		36D9C19A2FFC3D8800886D05 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				36D9C1A32FFC413500886D05 /* FoodItem.swift */,
+				36D9C1A52FFC451E00886D05 /* Profile.swift */,
+				36D9C1A72FFC46B000886D05 /* LogEntry.swift */,
+				36D9C1AA2FFC48DE00886D05 /* Recipe.swift */,
+				36D9C1AC2FFC493F00886D05 /* RecipeIngredient.swift */,
+				36D9C1AF2FFC49CB00886D05 /* DailyLog.swift */,
+				36D9C1B12FFC4A0E00886D05 /* WeightLog.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,8 +180,17 @@
 		36D9C19E2FFC3DAB00886D05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36D9C19F2FFC3F8000886D05 /* Dashboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		36D9C19F2FFC3F8000886D05 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				36D9C1A02FFC3FA400886D05 /* DashboardView.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +210,7 @@
 			);
 			name = NOXH;
 			packageProductDependencies = (
+				36D9C1B42FFC4B8E00886D05 /* Supabase */,
 			);
 			productName = NOXH;
 			productReference = 3678DBFF2FFC34C600F23378 /* NOXH.app */;
@@ -259,6 +294,9 @@
 			);
 			mainGroup = 3678DBF62FFC34C600F23378;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				36D9C1B32FFC4B8E00886D05 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3678DC002FFC34C600F23378 /* Products */;
 			projectDirPath = "";
@@ -302,6 +340,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				36D9C18D2FFC3A5600886D05 /* NOXHApp.swift in Sources */,
+				36D9C1AD2FFC493F00886D05 /* RecipeIngredient.swift in Sources */,
+				36D9C1A62FFC451E00886D05 /* Profile.swift in Sources */,
+				36D9C1A82FFC46B000886D05 /* LogEntry.swift in Sources */,
+				36D9C1B22FFC4A0E00886D05 /* WeightLog.swift in Sources */,
+				36D9C1AB2FFC48DE00886D05 /* Recipe.swift in Sources */,
+				36D9C1A12FFC3FA400886D05 /* DashboardView.swift in Sources */,
+				36D9C1B02FFC49CB00886D05 /* DailyLog.swift in Sources */,
+				36D9C1A42FFC413500886D05 /* FoodItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +690,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36D9C1B32FFC4B8E00886D05 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36D9C1B42FFC4B8E00886D05 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36D9C1B32FFC4B8E00886D05 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3678DBF72FFC34C600F23378 /* Project object */;
 }
