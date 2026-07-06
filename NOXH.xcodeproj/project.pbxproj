@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		36D9C18B2FFC3A5600886D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D9C1882FFC3A5600886D05 /* Assets.xcassets */; };
+		36D9C18D2FFC3A5600886D05 /* NOXHApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C18A2FFC3A5600886D05 /* NOXHApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3678DC0D2FFC34C800F23378 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +32,11 @@
 		3678DBFF2FFC34C600F23378 /* NOXH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOXH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3678DC0C2FFC34C800F23378 /* NOXHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOXHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3678DC162FFC34C800F23378 /* NOXHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOXHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D9C1882FFC3A5600886D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36D9C18A2FFC3A5600886D05 /* NOXHApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOXHApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		3678DC012FFC34C600F23378 /* NOXH */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NOXH;
-			sourceTree = "<group>";
-		};
 		3678DC0F2FFC34C800F23378 /* NOXHTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = NOXHTests;
@@ -75,7 +77,12 @@
 		3678DBF62FFC34C600F23378 = {
 			isa = PBXGroup;
 			children = (
-				3678DC012FFC34C600F23378 /* NOXH */,
+				36D9C19E2FFC3DAB00886D05 /* Views */,
+				36D9C19D2FFC3DA300886D05 /* ViewModels */,
+				36D9C19C2FFC3D9900886D05 /* Services */,
+				36D9C19A2FFC3D8800886D05 /* Models */,
+				36D9C1952FFC3D4E00886D05 /* Core */,
+				36D9C1942FFC3D3500886D05 /* App */,
 				3678DC0F2FFC34C800F23378 /* NOXHTests */,
 				3678DC192FFC34C800F23378 /* NOXHUITests */,
 				3678DC002FFC34C600F23378 /* Products */,
@@ -92,6 +99,66 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		36D9C1942FFC3D3500886D05 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				36D9C18A2FFC3A5600886D05 /* NOXHApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		36D9C1952FFC3D4E00886D05 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				36D9C1992FFC3D7B00886D05 /* Extensions */,
+				36D9C1972FFC3D6F00886D05 /* Theme */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		36D9C1972FFC3D6F00886D05 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				36D9C1882FFC3A5600886D05 /* Assets.xcassets */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		36D9C1992FFC3D7B00886D05 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36D9C19A2FFC3D8800886D05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36D9C19C2FFC3D9900886D05 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		36D9C19D2FFC3DA300886D05 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		36D9C19E2FFC3DAB00886D05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +173,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				3678DC012FFC34C600F23378 /* NOXH */,
 			);
 			name = NOXH;
 			packageProductDependencies = (
@@ -212,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D9C18B2FFC3A5600886D05 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D9C18D2FFC3A5600886D05 /* NOXHApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
