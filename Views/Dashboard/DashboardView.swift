@@ -6,15 +6,32 @@
 //
 
 import SwiftUI
+import Supabase
 
 struct DashboardView: View {
+    @State private var jsonResponseText: String = "Betöltés..."
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
-            Text("Noxh Dashboard")
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
+            ScrollView{
+                Text(jsonResponseText)
+                    .font(.system(.body, design: .monospaced))
+                    .foregroundColor(.white)
+                    .padding()
+            }
+        }
+        .task {
+            do {
+                let foodItems: [FoodItem] = try await SupabaseManager.shared.client
+                    .from("food_items")
+                    .select()
+                    .execute()
+                    .value
+                self.jsonResponseText = String(describing: foodItems)
+            }
+            catch {
+                self.jsonResponseText = "Hiba történt: \(error.localizedDescription)"
+            }
         }
     }
 }
