@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3697EADF2FFCEFF000C86811 /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697EADE2FFCEFF000C86811 /* SupabaseManager.swift */; };
+		3697EAE32FFD059D00C86811 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697EAE22FFD059D00C86811 /* LoginView.swift */; };
 		36D9C18B2FFC3A5600886D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D9C1882FFC3A5600886D05 /* Assets.xcassets */; };
 		36D9C18D2FFC3A5600886D05 /* NOXHApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C18A2FFC3A5600886D05 /* NOXHApp.swift */; };
 		36D9C1A12FFC3FA400886D05 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C1A02FFC3FA400886D05 /* DashboardView.swift */; };
@@ -43,6 +44,8 @@
 		3678DC0C2FFC34C800F23378 /* NOXHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOXHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3678DC162FFC34C800F23378 /* NOXHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOXHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3697EADE2FFCEFF000C86811 /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
+		3697EAE02FFCFED700C86811 /* NOXH.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NOXH.entitlements; sourceTree = "<group>"; };
+		3697EAE22FFD059D00C86811 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		36D9C1882FFC3A5600886D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36D9C18A2FFC3A5600886D05 /* NOXHApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOXHApp.swift; sourceTree = "<group>"; };
 		36D9C1A02FFC3FA400886D05 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -97,6 +100,7 @@
 		3678DBF62FFC34C600F23378 = {
 			isa = PBXGroup;
 			children = (
+				3697EAE02FFCFED700C86811 /* NOXH.entitlements */,
 				36D9C19E2FFC3DAB00886D05 /* Views */,
 				36D9C19D2FFC3DA300886D05 /* ViewModels */,
 				36D9C19C2FFC3D9900886D05 /* Services */,
@@ -117,6 +121,14 @@
 				3678DC162FFC34C800F23378 /* NOXHUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3697EAE12FFD058D00C86811 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3697EAE22FFD059D00C86811 /* LoginView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		36D9C1942FFC3D3500886D05 /* App */ = {
@@ -183,6 +195,7 @@
 		36D9C19E2FFC3DAB00886D05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3697EAE12FFD058D00C86811 /* Auth */,
 				36D9C19F2FFC3F8000886D05 /* Dashboard */,
 			);
 			path = Views;
@@ -350,6 +363,7 @@
 				3697EADF2FFCEFF000C86811 /* SupabaseManager.swift in Sources */,
 				36D9C1AB2FFC48DE00886D05 /* Recipe.swift in Sources */,
 				36D9C1A12FFC3FA400886D05 /* DashboardView.swift in Sources */,
+				3697EAE32FFD059D00C86811 /* LoginView.swift in Sources */,
 				36D9C1B02FFC49CB00886D05 /* DailyLog.swift in Sources */,
 				36D9C1A42FFC413500886D05 /* FoodItem.swift in Sources */,
 			);
@@ -511,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NOXH.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SXV873ZRZQ;
@@ -543,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NOXH.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SXV873ZRZQ;
