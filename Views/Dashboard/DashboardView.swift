@@ -10,6 +10,7 @@ import Supabase
 
 struct DashboardView: View {
     @State private var jsonResponseText: String = "Betöltés..."
+    @Binding var isAuthenticated: Bool
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
@@ -18,6 +19,23 @@ struct DashboardView: View {
                     .font(.system(.body, design: .monospaced))
                     .foregroundColor(.white)
                     .padding()
+                Button(action: {
+                    Task {
+                        do {
+                            try await SupabaseManager.shared.client.auth.signOut()
+                            print("Sikeres kijelentkezés!")
+                            await MainActor.run {
+                                isAuthenticated = false
+                            }
+                        } catch {
+                            print("Hiba a kijelentkezéskor: \(error.localizedDescription)")
+                        }
+                    }
+                }) {
+                    Text("LOG OUT")
+                        .foregroundColor(.red)
+                        .bold()
+                }
             }
         }
         .task {
@@ -37,5 +55,5 @@ struct DashboardView: View {
 }
 
 #Preview {
-    DashboardView()
+    DashboardView(isAuthenticated: .constant(true))
 }
