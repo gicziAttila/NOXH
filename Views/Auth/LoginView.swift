@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import Supabase
 
 struct LoginView: View {
     private let bgColorStart = Color(red: 38/255.0, green: 47/255.0, blue: 53/255.0)
     private let bgColorEnd = Color(red: 10/255.0, green: 10/255.0, blue: 10/255.0)
     @State private var email: String = ""
+    @State private var isEmailSent: Bool = false
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [bgColorStart, bgColorEnd]), startPoint: .top, endPoint: .bottom)
@@ -37,7 +39,9 @@ struct LoginView: View {
                     .textInputAutocapitalization(.never)
                     .autocorrectionDisabled(true)
                 Button(action: {
-                    print("lorem ipsum")
+                    Task {
+                        await sendMagicLink()
+                    }
                 }) {
                     Text("log in")
                         .font(.headline)
@@ -56,10 +60,28 @@ struct LoginView: View {
                 .padding(.horizontal, 24)
                 .padding(.top, 20)
                 .animation(.easeInOut(duration: 0.3), value: email.isEmpty)
+                if isEmailSent {
+                    Text("check your mailbox")
+                        .foregroundColor(.black)
+                        .bold()
+                        .textCase(.uppercase)
+                }
             }
             .padding(.horizontal, 24)
             }
         }
+    private func sendMagicLink() async {
+        guard !email.isEmpty else {return}
+        do {
+            try await SupabaseManager.shared.client.auth.signInWithOTP(email: email, redirectTo: URL(string: "noxh://login-callback")
+            )
+            await MainActor.run{
+                isEmailSent = true
+            }
+        } catch {
+            print("Hiba a Magic Link küldésekor: \(error.localizedDescription)")
+        }
+    }
     }
 
 #Preview {
