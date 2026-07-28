@@ -7,14 +7,28 @@
 
 import SwiftUI
 import Supabase
-
 struct DashboardView: View {
+    @StateObject private var viewModel = DashboardViewModel()
     @State private var jsonResponseText: String = "Betöltés..."
     @Binding var isAuthenticated: Bool
     var body: some View {
         ZStack {
-            Color.black.ignoresSafeArea()
+            AppBackground()
             ScrollView{
+                DateSelectView(viewModel: viewModel)
+                    .padding(.top, 20)
+                    .padding(.bottom, 20)
+                MacroCircleView(title: "calories", progress: 0.6, color: .green, innerValue: "420", innerSubText: "kcal left", size: .main)
+                    .frame(width: 180, height: 180)
+                HStack(spacing: 1){
+                    MacroCircleView(title: "protein", progress: 1, color: .blue, innerValue: "100", innerSubText: "gram over")
+                        .frame(width: 130, height: 130)
+                    MacroCircleView(title: "carbs", progress: 0.9, color: .yellow, innerValue: "10", innerSubText: "gram left")
+                        .frame(width: 130, height: 130)
+                    MacroCircleView(title: "fat", progress: 0.6, color: .red, innerValue: "40", innerSubText: "gram left")
+                        .frame(width: 130, height: 130)
+                }
+                .padding(.top, 20)
                 Text(jsonResponseText)
                     .font(.system(.body, design: .monospaced))
                     .foregroundColor(.white)

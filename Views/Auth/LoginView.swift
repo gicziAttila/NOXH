@@ -9,13 +9,11 @@ import SwiftUI
 import Supabase
 
 struct LoginView: View {
-    private let bgColorStart = Color(red: 38/255.0, green: 47/255.0, blue: 53/255.0)
-    private let bgColorEnd = Color(red: 10/255.0, green: 10/255.0, blue: 10/255.0)
     @State private var email: String = ""
     @State private var isEmailSent: Bool = false
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [bgColorStart, bgColorEnd]), startPoint: .top, endPoint: .bottom)
+            AppBackground()
         .edgesIgnoringSafeArea(.all)
             VStack{
                 Image("noxh_logo")
