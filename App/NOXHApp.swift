@@ -10,11 +10,15 @@ import Supabase
 
 @main
 struct NOXHApp: App {
+    @State private var isLoading: Bool = true
     @State private var isAuthenticated: Bool = false
     var body: some Scene {
         WindowGroup {
             Group {
-                if isAuthenticated {
+                if isLoading {
+                    LoadingView()
+                }
+                else if isAuthenticated {
                     DashboardView(isAuthenticated: $isAuthenticated)
                 }
                 else{
@@ -37,11 +41,17 @@ struct NOXHApp: App {
             .task {
                 do {
                     _ = try await SupabaseManager.shared.client.auth.session
-                    isAuthenticated = true
+                    await MainActor.run {
+                        isAuthenticated = true
+                        isLoading = false
+                    }
                 } catch {
-                    isAuthenticated = false
+                    await MainActor.run {
+                        isAuthenticated = false
+                        isLoading = false
+                    }
                 }
             }
         }
     }
-}
+}  

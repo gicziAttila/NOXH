@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3606ADF5302CEB69005C48F1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3606ADF4302CEB69005C48F1 /* LoadingView.swift */; };
 		364FD0273018ED5300E2ED87 /* MacroCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD0263018ED5300E2ED87 /* MacroCircleView.swift */; };
 		364FD0293018F9F800E2ED87 /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD0283018F9F800E2ED87 /* AppBackground.swift */; };
 		364FD0403019060800E2ED87 /* DateSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD03F3019060500E2ED87 /* DateSelectView.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3606ADF4302CEB69005C48F1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		364FD0263018ED5300E2ED87 /* MacroCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroCircleView.swift; sourceTree = "<group>"; };
 		364FD0283018F9F800E2ED87 /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
 		364FD03F3019060500E2ED87 /* DateSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				3697EAE22FFD059D00C86811 /* LoginView.swift */,
+				3606ADF4302CEB69005C48F1 /* LoadingView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				36D9C1A62FFC451E00886D05 /* Profile.swift in Sources */,
 				36D9C1A82FFC46B000886D05 /* LogEntry.swift in Sources */,
 				36D9C1B22FFC4A0E00886D05 /* WeightLog.swift in Sources */,
+				3606ADF5302CEB69005C48F1 /* LoadingView.swift in Sources */,
 				3697EADF2FFCEFF000C86811 /* SupabaseManager.swift in Sources */,
 				364FD0433019110100E2ED87 /* DashboardViewModel.swift in Sources */,
 				36D9C1AB2FFC48DE00886D05 /* Recipe.swift in Sources */,
