@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3606ADF5302CEB69005C48F1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3606ADF4302CEB69005C48F1 /* LoadingView.swift */; };
+		36195F7A302E39050067EEFE /* MealCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36195F79302E39050067EEFE /* MealCardView.swift */; };
 		364FD0273018ED5300E2ED87 /* MacroCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD0263018ED5300E2ED87 /* MacroCircleView.swift */; };
 		364FD0293018F9F800E2ED87 /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD0283018F9F800E2ED87 /* AppBackground.swift */; };
 		364FD0403019060800E2ED87 /* DateSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD03F3019060500E2ED87 /* DateSelectView.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		3606ADF4302CEB69005C48F1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		36195F79302E39050067EEFE /* MealCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCardView.swift; sourceTree = "<group>"; };
 		364FD0263018ED5300E2ED87 /* MacroCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroCircleView.swift; sourceTree = "<group>"; };
 		364FD0283018F9F800E2ED87 /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
 		364FD03F3019060500E2ED87 /* DateSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				364FD03F3019060500E2ED87 /* DateSelectView.swift */,
 				364FD0263018ED5300E2ED87 /* MacroCircleView.swift */,
 				364FD0283018F9F800E2ED87 /* AppBackground.swift */,
+				36195F79302E39050067EEFE /* MealCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			files = (
 				36D9C18D2FFC3A5600886D05 /* NOXHApp.swift in Sources */,
 				36D9C1AD2FFC493F00886D05 /* RecipeIngredient.swift in Sources */,
+				36195F7A302E39050067EEFE /* MealCardView.swift in Sources */,
 				36D9C1A62FFC451E00886D05 /* Profile.swift in Sources */,
 				36D9C1A82FFC46B000886D05 /* LogEntry.swift in Sources */,
 				36D9C1B22FFC4A0E00886D05 /* WeightLog.swift in Sources */,
