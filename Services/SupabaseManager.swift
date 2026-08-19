@@ -12,8 +12,8 @@ final class SupabaseManager {
     static let shared = SupabaseManager()
     let client: SupabaseClient
     private init() {
-        let projectURL = URL(string: "https://urqakwlirsmvcuayxzsr.supabase.co")!
-        let anonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVycWFrd2xpcnNtdmN1YXl4enNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMxNjQ0NzksImV4cCI6MjA5ODc0MDQ3OX0.QTUgWW9wJA39AjkyJavlKzHGLL8gWgpXCPAos9mX-rQ"
+        let projectURL = env.supabaseURL
+        let anonKey = env.supabaseAnonKey
         self.client = SupabaseClient(supabaseURL: projectURL, supabaseKey: anonKey)
     }
     private func todayString() -> String {
@@ -21,4 +21,14 @@ final class SupabaseManager {
             formatter.dateFormat = "yyyy-MM-dd"
             return formatter.string(from: Date())
         }
+    func fetchProfile(userID: UUID) async throws -> Profile {
+        let profile: Profile = try await client
+            .from("profiles")
+            .select()
+            .eq("id", value: userID.uuidString)
+            .single()
+            .execute()
+            .value
+        return profile
+    }
 }

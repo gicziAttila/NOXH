@@ -15,6 +15,7 @@
 		364EC8113035A1BD00B10AE9 /* AICoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8103035A1BD00B10AE9 /* AICoachView.swift */; };
 		364EC8133035A1D500B10AE9 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8123035A1D500B10AE9 /* ProgressView.swift */; };
 		364EC8153035A1FB00B10AE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8143035A1FB00B10AE9 /* ContentView.swift */; };
+		364EC8173035AD4E00B10AE9 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8163035AD4E00B10AE9 /* env.swift */; };
 		364FD0273018ED5300E2ED87 /* MacroCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD0263018ED5300E2ED87 /* MacroCircleView.swift */; };
 		364FD0293018F9F800E2ED87 /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD0283018F9F800E2ED87 /* AppBackground.swift */; };
 		364FD0403019060800E2ED87 /* DateSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD03F3019060500E2ED87 /* DateSelectView.swift */; };
@@ -60,6 +61,7 @@
 		364EC8103035A1BD00B10AE9 /* AICoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICoachView.swift; sourceTree = "<group>"; };
 		364EC8123035A1D500B10AE9 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		364EC8143035A1FB00B10AE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		364EC8163035AD4E00B10AE9 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
 		364FD0263018ED5300E2ED87 /* MacroCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroCircleView.swift; sourceTree = "<group>"; };
 		364FD0283018F9F800E2ED87 /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
 		364FD03F3019060500E2ED87 /* DateSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectView.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				36D9C1992FFC3D7B00886D05 /* Extensions */,
 				36D9C1972FFC3D6F00886D05 /* Theme */,
 				364EC8143035A1FB00B10AE9 /* ContentView.swift */,
+				364EC8163035AD4E00B10AE9 /* env.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				364EC809303498EC00B10AE9 /* CustomTabBar.swift in Sources */,
 				36195F7A302E39050067EEFE /* MealCardView.swift in Sources */,
 				364EC8113035A1BD00B10AE9 /* AICoachView.swift in Sources */,
+				364EC8173035AD4E00B10AE9 /* env.swift in Sources */,
 				364EC8063033189600B10AE9 /* FloatingTabBar.swift in Sources */,
 				36D9C1A62FFC451E00886D05 /* Profile.swift in Sources */,
 				36D9C1A82FFC46B000886D05 /* LogEntry.swift in Sources */,
