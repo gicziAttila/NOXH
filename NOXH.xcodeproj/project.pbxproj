@@ -16,6 +16,7 @@
 		364EC8133035A1D500B10AE9 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8123035A1D500B10AE9 /* ProgressView.swift */; };
 		364EC8153035A1FB00B10AE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8143035A1FB00B10AE9 /* ContentView.swift */; };
 		364EC8173035AD4E00B10AE9 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8163035AD4E00B10AE9 /* env.swift */; };
+		364EC8193035F78F00B10AE9 /* NutritionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8183035F78F00B10AE9 /* NutritionCalculator.swift */; };
 		364FD0273018ED5300E2ED87 /* MacroCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD0263018ED5300E2ED87 /* MacroCircleView.swift */; };
 		364FD0293018F9F800E2ED87 /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD0283018F9F800E2ED87 /* AppBackground.swift */; };
 		364FD0403019060800E2ED87 /* DateSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD03F3019060500E2ED87 /* DateSelectView.swift */; };
@@ -62,6 +63,7 @@
 		364EC8123035A1D500B10AE9 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		364EC8143035A1FB00B10AE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		364EC8163035AD4E00B10AE9 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
+		364EC8183035F78F00B10AE9 /* NutritionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCalculator.swift; sourceTree = "<group>"; };
 		364FD0263018ED5300E2ED87 /* MacroCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroCircleView.swift; sourceTree = "<group>"; };
 		364FD0283018F9F800E2ED87 /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
 		364FD03F3019060500E2ED87 /* DateSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectView.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				3697EADE2FFCEFF000C86811 /* SupabaseManager.swift */,
+				364EC8183035F78F00B10AE9 /* NutritionCalculator.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364EC8193035F78F00B10AE9 /* NutritionCalculator.swift in Sources */,
 				36D9C18D2FFC3A5600886D05 /* NOXHApp.swift in Sources */,
 				36D9C1AD2FFC493F00886D05 /* RecipeIngredient.swift in Sources */,
 				364EC809303498EC00B10AE9 /* CustomTabBar.swift in Sources */,
