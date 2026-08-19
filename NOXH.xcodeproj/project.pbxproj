@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		3606ADF5302CEB69005C48F1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3606ADF4302CEB69005C48F1 /* LoadingView.swift */; };
 		36195F7A302E39050067EEFE /* MealCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36195F79302E39050067EEFE /* MealCardView.swift */; };
+		364EC8063033189600B10AE9 /* FloatingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8053033189600B10AE9 /* FloatingTabBar.swift */; };
+		364EC809303498EC00B10AE9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC808303498EC00B10AE9 /* CustomTabBar.swift */; };
+		364EC80F3035A1A900B10AE9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC80E3035A1A900B10AE9 /* ProfileView.swift */; };
+		364EC8113035A1BD00B10AE9 /* AICoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8103035A1BD00B10AE9 /* AICoachView.swift */; };
+		364EC8133035A1D500B10AE9 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8123035A1D500B10AE9 /* ProgressView.swift */; };
+		364EC8153035A1FB00B10AE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8143035A1FB00B10AE9 /* ContentView.swift */; };
 		364FD0273018ED5300E2ED87 /* MacroCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD0263018ED5300E2ED87 /* MacroCircleView.swift */; };
 		364FD0293018F9F800E2ED87 /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD0283018F9F800E2ED87 /* AppBackground.swift */; };
 		364FD0403019060800E2ED87 /* DateSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD03F3019060500E2ED87 /* DateSelectView.swift */; };
@@ -48,6 +54,12 @@
 /* Begin PBXFileReference section */
 		3606ADF4302CEB69005C48F1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		36195F79302E39050067EEFE /* MealCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCardView.swift; sourceTree = "<group>"; };
+		364EC8053033189600B10AE9 /* FloatingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBar.swift; sourceTree = "<group>"; };
+		364EC808303498EC00B10AE9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		364EC80E3035A1A900B10AE9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		364EC8103035A1BD00B10AE9 /* AICoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICoachView.swift; sourceTree = "<group>"; };
+		364EC8123035A1D500B10AE9 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		364EC8143035A1FB00B10AE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		364FD0263018ED5300E2ED87 /* MacroCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroCircleView.swift; sourceTree = "<group>"; };
 		364FD0283018F9F800E2ED87 /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
 		364FD03F3019060500E2ED87 /* DateSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectView.swift; sourceTree = "<group>"; };
@@ -110,6 +122,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		364EC80A3035A17100B10AE9 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				364EC8123035A1D500B10AE9 /* ProgressView.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		364EC80B3035A17700B10AE9 /* AICoach */ = {
+			isa = PBXGroup;
+			children = (
+				364EC8103035A1BD00B10AE9 /* AICoachView.swift */,
+			);
+			path = AICoach;
+			sourceTree = "<group>";
+		};
+		364EC80C3035A18000B10AE9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				364EC80E3035A1A900B10AE9 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		364FD0253018ED2F00E2ED87 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +153,8 @@
 				364FD0263018ED5300E2ED87 /* MacroCircleView.swift */,
 				364FD0283018F9F800E2ED87 /* AppBackground.swift */,
 				36195F79302E39050067EEFE /* MealCardView.swift */,
+				364EC8053033189600B10AE9 /* FloatingTabBar.swift */,
+				364EC808303498EC00B10AE9 /* CustomTabBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -178,6 +216,7 @@
 			children = (
 				36D9C1992FFC3D7B00886D05 /* Extensions */,
 				36D9C1972FFC3D6F00886D05 /* Theme */,
+				364EC8143035A1FB00B10AE9 /* ContentView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -230,6 +269,9 @@
 		36D9C19E2FFC3DAB00886D05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				364EC80C3035A18000B10AE9 /* Profile */,
+				364EC80B3035A17700B10AE9 /* AICoach */,
+				364EC80A3035A17100B10AE9 /* Progress */,
 				364FD0253018ED2F00E2ED87 /* Components */,
 				3697EAE12FFD058D00C86811 /* Auth */,
 				36D9C19F2FFC3F8000886D05 /* Dashboard */,
@@ -393,7 +435,10 @@
 			files = (
 				36D9C18D2FFC3A5600886D05 /* NOXHApp.swift in Sources */,
 				36D9C1AD2FFC493F00886D05 /* RecipeIngredient.swift in Sources */,
+				364EC809303498EC00B10AE9 /* CustomTabBar.swift in Sources */,
 				36195F7A302E39050067EEFE /* MealCardView.swift in Sources */,
+				364EC8113035A1BD00B10AE9 /* AICoachView.swift in Sources */,
+				364EC8063033189600B10AE9 /* FloatingTabBar.swift in Sources */,
 				36D9C1A62FFC451E00886D05 /* Profile.swift in Sources */,
 				36D9C1A82FFC46B000886D05 /* LogEntry.swift in Sources */,
 				36D9C1B22FFC4A0E00886D05 /* WeightLog.swift in Sources */,
@@ -401,13 +446,16 @@
 				3697EADF2FFCEFF000C86811 /* SupabaseManager.swift in Sources */,
 				364FD0433019110100E2ED87 /* DashboardViewModel.swift in Sources */,
 				36D9C1AB2FFC48DE00886D05 /* Recipe.swift in Sources */,
+				364EC80F3035A1A900B10AE9 /* ProfileView.swift in Sources */,
 				364FD0293018F9F800E2ED87 /* AppBackground.swift in Sources */,
 				364FD0273018ED5300E2ED87 /* MacroCircleView.swift in Sources */,
 				36D9C1A12FFC3FA400886D05 /* DashboardView.swift in Sources */,
+				364EC8153035A1FB00B10AE9 /* ContentView.swift in Sources */,
 				364FD0403019060800E2ED87 /* DateSelectView.swift in Sources */,
 				3697EAE32FFD059D00C86811 /* LoginView.swift in Sources */,
 				36D9C1B02FFC49CB00886D05 /* DailyLog.swift in Sources */,
 				36D9C1A42FFC413500886D05 /* FoodItem.swift in Sources */,
+				364EC8133035A1D500B10AE9 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

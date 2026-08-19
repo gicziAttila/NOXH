@@ -19,7 +19,7 @@ struct NOXHApp: App {
                     LoadingView()
                 }
                 else if isAuthenticated {
-                    DashboardView(isAuthenticated: $isAuthenticated)
+                    ContentView()
                 }
                 else{
                     LoginView()

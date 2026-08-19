@@ -26,6 +26,7 @@ struct DateSelectView: View {
                 .padding(.vertical, 12)
                 .background(Color.white.opacity(0.15))
                 .cornerRadius(8)
+                .glassEffect(in: .rect(cornerRadius: 8))
             Button(action: {
                 viewModel.changeDate(by: 1)
             }) {

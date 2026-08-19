@@ -10,7 +10,6 @@ import Supabase
 struct DashboardView: View {
     @StateObject private var viewModel = DashboardViewModel()
     @State private var jsonResponseText: String = "Betöltés..."
-    @Binding var isAuthenticated: Bool
     var body: some View {
         ZStack {
             AppBackground()
@@ -46,16 +45,15 @@ struct DashboardView: View {
                     .background(Color(red: 38/255.0, green: 47/255.0, blue: 53/255.0))
                     .cornerRadius(16)
                     .padding(.horizontal, 20)
-                    VStack(alignment: .leading){
+                    VStack(alignment: .leading, spacing: 24){
                         Text("today's meals")
                             .fontWeight(.bold)
                             .textCase(.uppercase)
                             .foregroundColor(.white)
-                        MealCardView(title: "breakfast", calories: 500, iconName: "cup.and.saucer.fill")
-                        MealCardView(title: "breakfast", calories: 500, iconName: "cup.and.saucer.fill")
-                        MealCardView(title: "breakfast", calories: 500, iconName: "cup.and.saucer.fill")
-                        MealCardView(title: "breakfast", calories: 500, iconName: "cup.and.saucer.fill")
-                        MealCardView(title: "breakfast", calories: 500, iconName: "cup.and.saucer.fill")
+                        MealCardView(title: "breakfast", calories: 420, iconName: "cup.and.saucer.fill")
+                        MealCardView(title: "lunch", calories: 1000, iconName: "fork.knife")
+                        MealCardView(title: "dinner", calories: 500, iconName: "moon.stars.fill")
+                        MealCardView(title: "snacks", calories: 200, iconName: "wineglass.fill")
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
@@ -65,23 +63,6 @@ struct DashboardView: View {
                         .font(.system(.body, design: .monospaced))
                         .foregroundColor(.white)
                         .padding()
-                    Button(action: {
-                        Task {
-                            do {
-                                try await SupabaseManager.shared.client.auth.signOut()
-                                print("Sikeres kijelentkezés!")
-                                await MainActor.run {
-                                    isAuthenticated = false
-                                }
-                            } catch {
-                                print("Hiba a kijelentkezéskor: \(error.localizedDescription)")
-                            }
-                        }
-                    }) {
-                        Text("LOG OUT")
-                            .foregroundColor(.red)
-                            .bold()
-                    }
                 }
             }
         }
@@ -102,5 +83,5 @@ struct DashboardView: View {
 }
 
 #Preview {
-    DashboardView(isAuthenticated: .constant(true))
+    DashboardView()
 }

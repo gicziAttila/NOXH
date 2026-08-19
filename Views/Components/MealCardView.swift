@@ -6,22 +6,20 @@ struct MealCardView: View {
     let iconName: String
     
     var body: some View {
-        // A ZStack szigorúan egyben tartja a rétegeket
         ZStack {
-            // 1. Háttér
             Color(red: 38/255.0, green: 47/255.0, blue: 53/255.0)
+                .overlay(
+                    Image(systemName: iconName)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 200, height: 160)
+                        .foregroundColor(.white)
+                        .opacity(0.04)
+                        .offset(x: 30, y: 20)
+                    , alignment: .bottomTrailing
+                )
             
-            // 2. Vízjel
-            Image(systemName: iconName)
-                .font(.system(size: 180))
-                .foregroundColor(.white)
-                .opacity(0.04)
-                .frame(width: 0, height: 0) // Nem nyomja szét a kártyát
-                .offset(x: 90, y: 30)
-            
-            // 3. Tartalom
             VStack(alignment: .leading) {
-                // Felső sor
                 HStack(alignment: .top) {
                     Text(title)
                         .fontWeight(.bold)
@@ -37,15 +35,13 @@ struct MealCardView: View {
                             .font(.system(size: 16, weight: .bold))
                             .foregroundColor(.white)
                             .frame(width: 32, height: 32)
-                            .background(Color.white.opacity(0.15))
-                            .cornerRadius(8)
+                            .glassEffect(in: .rect(cornerRadius: 10))
                     }
                 }
                 
-                // Középső Spacer: most már tudja, hogy csak a kártyán belül tágulhat!
+                
                 Spacer(minLength: 30)
                 
-                // Alsó sor
                 HStack(alignment: .lastTextBaseline, spacing: 4) {
                     Text("\(calories)")
                         .fontWeight(.bold)
@@ -60,10 +56,9 @@ struct MealCardView: View {
                         .font(.system(size: 14))
                 }
             }
-            .padding(16) // Belső margó
+            .padding(16)
         }
-        // A kártya fix mérete IDE KÍVÜLRE kerül a ZStack-re!
-        .frame(height: 120)
+        .frame(height: 150)
         .cornerRadius(16)
         .clipped()
     }

@@ -16,4 +16,9 @@ final class SupabaseManager {
         let anonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVycWFrd2xpcnNtdmN1YXl4enNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMxNjQ0NzksImV4cCI6MjA5ODc0MDQ3OX0.QTUgWW9wJA39AjkyJavlKzHGLL8gWgpXCPAos9mX-rQ"
         self.client = SupabaseClient(supabaseURL: projectURL, supabaseKey: anonKey)
     }
+    private func todayString() -> String {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            return formatter.string(from: Date())
+        }
 }
