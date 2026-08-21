@@ -19,10 +19,10 @@ struct NOXHApp: App {
                     LoadingView()
                 }
                 else if isAuthenticated {
-                    ContentView()
+                    FirstLaunchView()
                 }
                 else{
-                    LoginView()
+                    FirstLaunchView()
                 }
             }
             .onOpenURL { url in

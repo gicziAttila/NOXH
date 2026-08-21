@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3606ADF5302CEB69005C48F1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3606ADF4302CEB69005C48F1 /* LoadingView.swift */; };
 		36195F7A302E39050067EEFE /* MealCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36195F79302E39050067EEFE /* MealCardView.swift */; };
+		361F25703036FC7000E6CD18 /* RegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F256F3036FC7000E6CD18 /* RegView.swift */; };
 		364EC8063033189600B10AE9 /* FloatingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8053033189600B10AE9 /* FloatingTabBar.swift */; };
 		364EC809303498EC00B10AE9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC808303498EC00B10AE9 /* CustomTabBar.swift */; };
 		364EC80F3035A1A900B10AE9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC80E3035A1A900B10AE9 /* ProfileView.swift */; };
@@ -34,6 +35,7 @@
 		36D9C1B02FFC49CB00886D05 /* DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C1AF2FFC49CB00886D05 /* DailyLog.swift */; };
 		36D9C1B22FFC4A0E00886D05 /* WeightLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C1B12FFC4A0E00886D05 /* WeightLog.swift */; };
 		36D9C1B52FFC4B8E00886D05 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 36D9C1B42FFC4B8E00886D05 /* Supabase */; };
+		36DCE756303848C600B308C7 /* FirstLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DCE755303848C600B308C7 /* FirstLaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 /* Begin PBXFileReference section */
 		3606ADF4302CEB69005C48F1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		36195F79302E39050067EEFE /* MealCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCardView.swift; sourceTree = "<group>"; };
+		361F256F3036FC7000E6CD18 /* RegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegView.swift; sourceTree = "<group>"; };
 		364EC8053033189600B10AE9 /* FloatingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBar.swift; sourceTree = "<group>"; };
 		364EC808303498EC00B10AE9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		364EC80E3035A1A900B10AE9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 		36D9C1AC2FFC493F00886D05 /* RecipeIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredient.swift; sourceTree = "<group>"; };
 		36D9C1AF2FFC49CB00886D05 /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLog.swift; sourceTree = "<group>"; };
 		36D9C1B12FFC4A0E00886D05 /* WeightLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLog.swift; sourceTree = "<group>"; };
+		36DCE755303848C600B308C7 /* FirstLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -203,6 +207,8 @@
 			children = (
 				3697EAE22FFD059D00C86811 /* LoginView.swift */,
 				3606ADF4302CEB69005C48F1 /* LoadingView.swift */,
+				361F256F3036FC7000E6CD18 /* RegView.swift */,
+				36DCE755303848C600B308C7 /* FirstLaunchView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -448,6 +454,7 @@
 				364EC8173035AD4E00B10AE9 /* env.swift in Sources */,
 				364EC8063033189600B10AE9 /* FloatingTabBar.swift in Sources */,
 				36D9C1A62FFC451E00886D05 /* Profile.swift in Sources */,
+				36DCE756303848C600B308C7 /* FirstLaunchView.swift in Sources */,
 				36D9C1A82FFC46B000886D05 /* LogEntry.swift in Sources */,
 				36D9C1B22FFC4A0E00886D05 /* WeightLog.swift in Sources */,
 				3606ADF5302CEB69005C48F1 /* LoadingView.swift in Sources */,
@@ -462,6 +469,7 @@
 				364FD0403019060800E2ED87 /* DateSelectView.swift in Sources */,
 				3697EAE32FFD059D00C86811 /* LoginView.swift in Sources */,
 				36D9C1B02FFC49CB00886D05 /* DailyLog.swift in Sources */,
+				361F25703036FC7000E6CD18 /* RegView.swift in Sources */,
 				36D9C1A42FFC413500886D05 /* FoodItem.swift in Sources */,
 				364EC8133035A1D500B10AE9 /* ProgressView.swift in Sources */,
 			);
