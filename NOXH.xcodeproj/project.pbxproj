@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3606ADF5302CEB69005C48F1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3606ADF4302CEB69005C48F1 /* LoadingView.swift */; };
+		36176BA3304483D60093CBC3 /* NameStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36176BA2304483D40093CBC3 /* NameStepView.swift */; };
+		36176BA7304497F80093CBC3 /* DatasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36176BA6304497F80093CBC3 /* DatasView.swift */; };
+		36176BA93044981C0093CBC3 /* RulerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36176BA83044981B0093CBC3 /* RulerPicker.swift */; };
 		36195F7A302E39050067EEFE /* MealCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36195F79302E39050067EEFE /* MealCardView.swift */; };
-		361F25703036FC7000E6CD18 /* RegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F256F3036FC7000E6CD18 /* RegView.swift */; };
+		361F25703036FC7000E6CD18 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F256F3036FC7000E6CD18 /* OnboardingView.swift */; };
 		364EC8063033189600B10AE9 /* FloatingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC8053033189600B10AE9 /* FloatingTabBar.swift */; };
 		364EC809303498EC00B10AE9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC808303498EC00B10AE9 /* CustomTabBar.swift */; };
 		364EC80F3035A1A900B10AE9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC80E3035A1A900B10AE9 /* ProfileView.swift */; };
@@ -57,8 +60,11 @@
 
 /* Begin PBXFileReference section */
 		3606ADF4302CEB69005C48F1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		36176BA2304483D40093CBC3 /* NameStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameStepView.swift; sourceTree = "<group>"; };
+		36176BA6304497F80093CBC3 /* DatasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasView.swift; sourceTree = "<group>"; };
+		36176BA83044981B0093CBC3 /* RulerPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerPicker.swift; sourceTree = "<group>"; };
 		36195F79302E39050067EEFE /* MealCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCardView.swift; sourceTree = "<group>"; };
-		361F256F3036FC7000E6CD18 /* RegView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegView.swift; sourceTree = "<group>"; };
+		361F256F3036FC7000E6CD18 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		364EC8053033189600B10AE9 /* FloatingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBar.swift; sourceTree = "<group>"; };
 		364EC808303498EC00B10AE9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		364EC80E3035A1A900B10AE9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -130,6 +136,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36176BA0304469080093CBC3 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				36176BA1304483CD0093CBC3 /* Components */,
+				361F256F3036FC7000E6CD18 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		36176BA1304483CD0093CBC3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				36176BA5304497AE0093CBC3 /* DatasViewComponents */,
+				36176BA2304483D40093CBC3 /* NameStepView.swift */,
+				36176BA6304497F80093CBC3 /* DatasView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		36176BA5304497AE0093CBC3 /* DatasViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				36176BA83044981B0093CBC3 /* RulerPicker.swift */,
+			);
+			path = DatasViewComponents;
+			sourceTree = "<group>";
+		};
 		364EC80A3035A17100B10AE9 /* Progress */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +240,6 @@
 			children = (
 				3697EAE22FFD059D00C86811 /* LoginView.swift */,
 				3606ADF4302CEB69005C48F1 /* LoadingView.swift */,
-				361F256F3036FC7000E6CD18 /* RegView.swift */,
 				36DCE755303848C600B308C7 /* FirstLaunchView.swift */,
 			);
 			path = Auth;
@@ -281,6 +313,7 @@
 		36D9C19E2FFC3DAB00886D05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36176BA0304469080093CBC3 /* Onboarding */,
 				364EC80C3035A18000B10AE9 /* Profile */,
 				364EC80B3035A17700B10AE9 /* AICoach */,
 				364EC80A3035A17100B10AE9 /* Progress */,
@@ -451,6 +484,7 @@
 				364EC809303498EC00B10AE9 /* CustomTabBar.swift in Sources */,
 				36195F7A302E39050067EEFE /* MealCardView.swift in Sources */,
 				364EC8113035A1BD00B10AE9 /* AICoachView.swift in Sources */,
+				36176BA93044981C0093CBC3 /* RulerPicker.swift in Sources */,
 				364EC8173035AD4E00B10AE9 /* env.swift in Sources */,
 				364EC8063033189600B10AE9 /* FloatingTabBar.swift in Sources */,
 				36D9C1A62FFC451E00886D05 /* Profile.swift in Sources */,
@@ -466,10 +500,12 @@
 				364FD0273018ED5300E2ED87 /* MacroCircleView.swift in Sources */,
 				36D9C1A12FFC3FA400886D05 /* DashboardView.swift in Sources */,
 				364EC8153035A1FB00B10AE9 /* ContentView.swift in Sources */,
+				36176BA7304497F80093CBC3 /* DatasView.swift in Sources */,
 				364FD0403019060800E2ED87 /* DateSelectView.swift in Sources */,
 				3697EAE32FFD059D00C86811 /* LoginView.swift in Sources */,
 				36D9C1B02FFC49CB00886D05 /* DailyLog.swift in Sources */,
-				361F25703036FC7000E6CD18 /* RegView.swift in Sources */,
+				361F25703036FC7000E6CD18 /* OnboardingView.swift in Sources */,
+				36176BA3304483D60093CBC3 /* NameStepView.swift in Sources */,
 				36D9C1A42FFC413500886D05 /* FoodItem.swift in Sources */,
 				364EC8133035A1D500B10AE9 /* ProgressView.swift in Sources */,
 			);

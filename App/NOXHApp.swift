@@ -17,6 +17,7 @@ struct NOXHApp: App {
             Group {
                 if isLoading {
                     LoadingView()
+                        
                 }
                 else if isAuthenticated {
                     FirstLaunchView()
@@ -25,6 +26,7 @@ struct NOXHApp: App {
                     FirstLaunchView()
                 }
             }
+            .preferredColorScheme(.dark)
             .onOpenURL { url in
                 Task {
                     do {
